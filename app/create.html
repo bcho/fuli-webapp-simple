@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>simple</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="bower_components/pure/pure.css">
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="page">
+            <header class="head-nav clearfix">
+                <h1 class="head-nav__logo">添加福利</h1>
+                <div class="head-nav__user-infos">
+                    <a class="head-nav__user-infos__item head-nav__user-infos__item__state_highlight" href="#">hbc</a>
+                    <a class="head-nav__user-infos__item head-nav__user-infos__item__state_op" href="#">登出</a>
+                </div>
+            </header>
+            <section class="links">
+                <form class="links__add-form pure-form pure-form-stacked" action="">
+                    <div class="links__add-form__input pure-control-group">
+                        <label for="url">链接地址</label>
+                        <input type="text" name="url" class="pure-input-1-3">
+                    </div>
+                    <div class="links__add-form__input pure-control-group">
+                        <label for="title">福利标题</label>
+                        <input type="text" name="title" class="pure-input-1-3">
+                    </div>
+                    <div class="links__add-form__textarea pure-control-group">
+                        <label for="description">描述（可选）</label>
+                        <textarea name="description" class="pure-input-1-2" rows="15"></textarea>
+                    </div>
+                    <div class="links__add-form__select pure-control-group">
+                        <label for="category">分类</label>
+                        <select name="category">
+                            <option value="1">前端</option>
+                            <option value="2">后台</option>
+                            <option value="3">移动</option>
+                            <option value="4">鸡血</option>
+                        </select>
+                    </div>
+                    <div class="links__add-form__submit pure-controls">
+                        <button type="submit" class="pure-button pure-button-primary">提交</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
